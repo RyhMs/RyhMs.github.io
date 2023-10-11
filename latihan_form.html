@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>latihan form</title>
+    </head>
+    <body>
+        <div id="container">
+            <form action="">
+                Nama : <input type="text"placeholder="isi nama kalian" name="data_nama" id="data_nama">
+                <br>
+                Password : <input type="password" placeholder="isi password" name="data_pw" id="data_pw">
+            </form>
+            <button onclick="tampildata()">proses</button>
+        </div>
+
+        <p class="hasilnama"></p>
+        <p class="hasilpassword"></p>
+
+            <tr>
+            <script type="text/javascript">
+
+                
+
+
+                function tampildata(){
+                    var nama = document.getElementById('data_nama').value;
+                    var password = document.getElementById('data_pw').value;
+                    console.log(nama);
+                    console.log(password);
+
+                    const hasilnama = document.querySelector('.hasilnama');
+                const hasilpassword = document.querySelector('.hasilpassword');
+
+                   
+                    hasilnama.innerHTML = 'Nama : ' + nama;
+                    hasilpassword.innerHTML = 'Password : '+ password;
+
+                    alert("Nama : " + nama + "\n Password : " + password);
+
+            }
+            
+        </script>
+    </body>
+</html>
