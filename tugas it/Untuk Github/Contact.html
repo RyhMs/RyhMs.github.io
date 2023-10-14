@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <table border="3"
+   
+    <tr style="background-color: aqua;">
+      <th><a href="Home.html">Home</a></th>
+      <th><a href="Gallery.html">Gallery</a></th>
+      <th><a href="About.html">About Me</a</th>
+      <th><a href="Contact.html">Contact</a</th>
+    </tr>
+    <table>
+        <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td><input type="text" placeholder="Masukkan nama" id="nama"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td><input type="text" placeholder="Masukkan Email" id="Email"></td>
+        </tr>
+        <tr>
+            <td>Deskripsi</td>
+            <td>:</td>
+            <Td><textarea cols="30" rows="10" placeholder="Masukkan Deskripsi" id="desc"></textarea></Td>
+        </tr>
+        <tr>
+            <td><button onclick="button()">Kirim</button></td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        function button(){
+            var nama = document.getElementById('nama').value
+            var Email = document.getElementById('Email').value
+            var Deskripsi = document.getElementById('desc').value
+            console.log
+            alert("Nama : " + nama + "\nEmail : " + Email + "\nDesc : " + Deskripsi)
+        }
+    </script>
+</body>
+</html>
